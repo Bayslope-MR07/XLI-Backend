@@ -92,6 +92,8 @@ MIDDLEWARE = [
 
 # CORS settings
 CORS_ALLOWED_ORIGINS = [
+    'https://xli-frontend.onrender.com',
+    'https://xli-backend.onrender.com',
     "http://localhost:4200",
     "http://127.0.0.1:4200",
     "http://ec2-18-216-104-19.us-east-2.compute.amazonaws.com",
@@ -275,5 +277,9 @@ CACHES = {
         "LOCATION": "xli-cache",
     }
 }
+
+
+
+CSRF_TRUSTED_ORIGINS = ['https://xli-frontend.onrender.com', 'https://xli-backend.onrender.com']
 
 
